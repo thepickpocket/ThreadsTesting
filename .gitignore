@@ -1,0 +1,7 @@
+*.md
+*.log
+*.idx
+*.synctex.gz
+*.gz
+*.aux
+*.out
