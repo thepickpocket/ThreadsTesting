@@ -12,6 +12,7 @@ This is the repository for the working document of the testing team for both Com
 * Liz Josheph - u
 * Anrich van Schalkwyk - u
 * Baruch Molefe - u
+* Jimmy Peleha - u
 ```
 
 ## Links
