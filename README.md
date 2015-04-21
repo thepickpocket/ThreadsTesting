@@ -3,13 +3,20 @@ This is the repository for the working document of the testing team for both Com
 
 ## Members of the team.
 
-'''
-Jason Richard Evans - u13032608
-Abrie van Aardt - u
-Sebastian Gerber - u
-Maret Stoffberg - u
-Johannes Coetzee - u
-Liz Josheph - u
-Anrich van Schalkwyk - u
-Baruch Molefe - u
-'''
+```
+* Jason Richard Evans - u13032608
+* Abrie van Aardt - u
+* Sebastian Gerber - u
+* Maret Stoffberg - u
+* Johannes Coetzee - u
+* Liz Josheph - u
+* Anrich van Schalkwyk - u
+* Baruch Molefe - u
+```
+
+## Links
+
+```
+* Threading A : Unknown.
+* Threading B : [BuzzSpaceB/Threads](https://github.com/BuzzSpaceB/Threads)
+```
