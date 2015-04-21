@@ -18,5 +18,5 @@ This is the repository for the working document of the testing team for both Com
 
 ```
 * Threading A : Unknown.
-* Threading B : [BuzzSpaceB/Threads](https://github.com/BuzzSpaceB/Threads)
+* Threading B : https://github.com/BuzzSpaceB/Threads
 ```
