@@ -29,26 +29,28 @@ This is the repository for the working document of the testing team for both Com
   * Sebastian
     *SubmitPost
     *MarkPostAsRead
-    *CloseThread
   * Johannes
     *MoveThread
     *HideThread
+  * Abrie
+    *CloseThread
     *Threads.QueryThread
+    
 * Team B Functional Requirements
   * Jason
     *SubmitPost
     *MarkPostAsRead
-    *CloseThread
   * Liz
     *MoveThread
     *HideThread
-    *Threads.QueryThread
-* Architectural Requirements (Team A & B)
-  * Abrie
   * Anrich
-  * Baruch
-  * Jimmy
-* Conclusion
+    *CloseThread
+    *Threads.QueryThread
+    
+* Architectural Requirements (Team A & B)
+  * Baruch (Team A)
+  * Jimmy (Team B)
+* Introduction and Conclusion
   * Maret
 ```
 
