@@ -60,5 +60,5 @@ This is the repository for the working document of the testing team for both Com
 * Check their code against the use case pre and post conditions specified in the Master Spec
 * If a function does not work at all that you cannot test it, write that in your report and do not change their code to test * it. If you have to change a variable to test, please specify it in your report. 
 * Eg. If a function throws and error instead of an exception it doesnt work.
-* Happy Testing:)
+* There are no git repository marks for this phase(apparently), Happy Testing:)
 ```
