@@ -5,7 +5,10 @@
 \begin{flushleft}
 \textbf{Test Status:} \emph{Partial Pass}. \\
 
-\textbf{Details:} -Will describe what is wrong with this function.
+\textbf{Details:}
+The submit post use-case was divided into seperate smaller functions. One function \emph{create(mUser, mParent, mPostType, mHeading, mContent, mMimeType)} is used to initialize the process of creating a new thread as well as its embedded post object. This function calls \emph{createNewThread(mUser, mParent, mLevel, mPostType, mHeading, mContent, mMimeType, mSubject)} which parses the current thread and post object to JSON strings and then persists them in a remote database.\\
+The problem however is that when child threads are created using the \emph{createThread(...)} function call, the child thread is never persisted to the remote datase.
+
 \end{flushleft}
 \subsubsection{MarkPostAsRead}
 \begin{flushleft}
