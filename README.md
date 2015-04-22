@@ -21,3 +21,33 @@ This is the repository for the working document of the testing team for both Com
 * Threading A : Unknown.
 * Threading B : https://github.com/BuzzSpaceB/Threads
 ```
+
+## Task Allocation
+
+```
+* Team A Functional Requirements
+  * Sebastian
+    *SubmitPost
+    *MarkPostAsRead
+    *CloseThread
+  * Johannes
+    *MoveThread
+    *HideThread
+    *Threads.QueryThread
+* Team B Functional Requirements
+  * Jason
+    *SubmitPost
+    *MarkPostAsRead
+    *CloseThread
+  * Liz
+    *MoveThread
+    *HideThread
+    *Threads.QueryThread
+* Architectural Requirements (Team A & B)
+  * Abrie
+  * Anrich
+  * Baruch
+  * Jimmy
+* Conclusion
+  * Maret
+```
