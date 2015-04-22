@@ -7,14 +7,20 @@
 
 \textbf{Details:}
 The submit post use-case was divided into seperate smaller functions. One function \emph{create(mUser, mParent, mPostType, mHeading, mContent, mMimeType)} is used to initialize the process of creating a new thread as well as its embedded post object. This function calls \emph{createNewThread(mUser, mParent, mLevel, mPostType, mHeading, mContent, mMimeType, mSubject)} which parses the current thread and post object to JSON strings and then persists them in a remote database.\\
-The problem however is that when child threads are created using the \emph{createThread(...)} function call, the child thread is never persisted to the remote datase.
+
+The problem however is that when child threads are created using the \emph{createThread(...)} function call, the child thread is never persisted to the remote datase.\\
+
+The functional requirements also state clearly that a thread (with its related post) should have been allocated a certain space, yet this functionality is never provided.
 
 \end{flushleft}
 \subsubsection{MarkPostAsRead}
 \begin{flushleft}
 \textbf{Test Status:} \emph{Complete Failure}. \\
 
-\textbf{Details:} -Will describe what is wrong with this function.
+\textbf{Details:}
+The teams approach to the reading events are not that well planned and clearly thought through. It simply sets a flag for the thread and persists that flag to the database. This however will then not be user based, as everyone who then accesses that specific thread from the database will have ``read'' it.\\
+This function is hence not working as required and thus fails completely. It is however a nice-to-have function and does not break or affect any other part of the thread module.
+
 \end{flushleft}
 
 %CONTENT
