@@ -7,7 +7,7 @@ This is the repository for the working document of the testing team for both Com
 * Jason Richard Evans - u13032608
 * Abrie van Aardt - u
 * Sebastian Gerber - u
-* Maret Stoffberg - u
+* Maret Stoffberg - u11071762
 * Johannes Coetzee - u10693077
 * Liz Josheph - u10075268
 * Anrich van Schalkwyk - u
