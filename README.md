@@ -51,8 +51,10 @@ This is the repository for the working document of the testing team for both Com
 * Architectural Requirements (Team A & B)
   * Baruch (Team A)
   * Jimmy (Team B)
+  * Hugo (Team A+B)
 * Introduction and Conclusion
   * Maret
+  * Hugo
 ```
 
 ## What is expected of us in Phase 4- Testing
