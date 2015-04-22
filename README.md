@@ -9,7 +9,7 @@ This is the repository for the working document of the testing team for both Com
 * Sebastian Gerber - u
 * Maret Stoffberg - u
 * Johannes Coetzee - u
-* Liz Josheph - u
+* Liz Josheph - u10075268
 * Anrich van Schalkwyk - u
 * Baruch Molefe - u
 * Jimmy Peleha - u
