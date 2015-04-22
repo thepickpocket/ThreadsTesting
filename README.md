@@ -8,7 +8,7 @@ This is the repository for the working document of the testing team for both Com
 * Abrie van Aardt - u
 * Sebastian Gerber - u
 * Maret Stoffberg - u
-* Johannes Coetzee - u
+* Johannes Coetzee - u10693077
 * Liz Josheph - u10075268
 * Anrich van Schalkwyk - u
 * Baruch Molefe - u
@@ -18,7 +18,7 @@ This is the repository for the working document of the testing team for both Com
 ## Links
 
 ```
-* Threading A : Unknown.
+* Threading A : https://github.com/davidbreetzke/Threading-A
 * Threading B : https://github.com/BuzzSpaceB/Threads
 ```
 
