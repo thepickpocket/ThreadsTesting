@@ -91,11 +91,44 @@ Overall assessment of tests:
  
 \begin{flushleft}
 \textbf{Conclusion:}
+<<<<<<< HEAD
 The bugs specified were Mongoose related. (Error: Cast Error:Cast to ObjectId failed for value [object Object] at path\_id)\\
 In HideThread we changed the parameter in test.equal to a different expected result and it still passed so we don’t think the function actually checks if the value field is hidden or not.\\
 In MoveThread there are no error checks or bounds checks as we inserted an overbound value and it still passed the test.
 \end{flushleft}
+=======
+The bugs specified were Mongoose related. (Error: Cast Error:Cast to ObjectId failed for value[object Object] at path_id)
+In HideThread we changed the parameter in test.equal to a different expected result and it still passed so we don’t think the function actually checks if the value field is hidden or not.
+In MoveThread there are no error checks or bounds checks as we inserted an overbound value and it still passed the test. 
+>>>>>>> origin/master
 
+\end{flushleft}
+
+\subsubsection{CloseThread}
+\begin{flushleft}
+\textbf{Test Status:} \emph{Pass}. \\
+
+\textbf{Details:}
+
+The CloseThread function is designed to flag a thread as closed and then call a function to summarise the thread.\\
+
+The function does pass unit testing but the structure and logic behind the function is somehwat flawed. Inside the function the mClosed flag is set to close to indicate the thread is now closed. A few lines later an if statement checks if the mClosed flag is set and then calls the createThreadSummary function. That if statement will always be true. Another flaw is that the createThreadSummary function returns a string containing the thread summary, but this string is never used within the closeThread function. 
+
+\textbf{Conclusion:}
+The function performs what it has to, it's just poorly coded. 
+
+\end{flushleft}
+\subsubsection{queryThread}
+\begin{flushleft}
+\textbf{Test Status:} \emph{Partial Pass}. \\
+
+\textbf{Details:}
+
+The purpose of this function is to query the database for a specific thread according to various filters that has to supplied as parameters to the function. Although the function does pass unit tests it does not satisfy its functional requirements. The function does not use the database to query the threads schema. It uses recursion to traverse a tree of thread object, which will only be in memory as long as the Express application is running. 
+
+\textbf{Conclusion:}
+
+Although the function does perform its functionality to a degree, it is not technically usable since the database is not being used. This means not results will ever be returned.
 
 
 %CONTENT
