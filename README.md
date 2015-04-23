@@ -13,7 +13,7 @@ This is the repository for the working document of the testing team for both Com
 * Anrich van Schalkwyk - u
 * Baruch Molefe - u
 * Jimmy Peleha - u12230830
-* Hugo Greyvenstein - u
+* Hugo Greyvenstein - u13019989
 ```
 
 ## Links
