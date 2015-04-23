@@ -1,6 +1,29 @@
 \subsection{Functional Requirements.}
 \begin{flushleft}
 
+\subsubsection{SubmitPost}
+\begin{flushleft}
+	\textbf{Test Status:} \emph{Partial Pass}. \\
+
+	\textbf{Details:}
+	The purpose of SubmitPost is to allow a user to submit a post to a thread, creating a new child thread.\\
+	The implemented solution passes only partially, because while the new post is submitted, it does not successfully create it's own child thread.\\
+	It also has a mimeType, post content and dateTime fileds, which were required.\\
+	As this function is classified as critical and only partially works, the system does not meet all the requirements it should.\\
+\end{flushleft}
+
+\subsubsection{MarkPostAsRead}
+\begin{flushleft}
+	\textbf{Test Status:} \emph{Complete Failure}. \\
+
+	\textbf{Details:}
+	The purpose of MarkPostAsRead is to store a reading event which contains the information that a user has read a particular post at a particular time.\\
+	The implemented solution fails completely, posts are not marked as read and as this is the only requirement it fails.\\
+	
+	As this function is classified as nice to have, it's failure does not prevent the rest of the system from working.\\
+  
+\end{flushleft}
+
 \subsubsection{MoveThread}
 \begin{flushleft}
 	\textbf{Test Status:} \emph{Partial Pass}. \\
