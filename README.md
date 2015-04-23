@@ -12,7 +12,7 @@ This is the repository for the working document of the testing team for both Com
 * Liz Josheph - u10075268
 * Anrich van Schalkwyk - u
 * Baruch Molefe - u
-* Jimmy Peleha - u
+* Jimmy Peleha - u12230830
 * Hugo Greyvenstein - u
 ```
 

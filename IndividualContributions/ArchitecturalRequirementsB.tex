@@ -2,5 +2,35 @@
 \begin{flushleft}
 
 %CONTENT
+The threads module is one of the most crucial modules in the Buzz system as it is the one through which users will actually interact with the system itself. It is, as outlined in the master specification responsible for functionality around threads and posts. 
+
+Since this system, and consiquently this module, will be used by potentially a huge amount of users, it is key that the Threads module be as scalable and as efficient as possible. With that said, here is an analysis of how the module performs as far as Architectural Requirements are concerned.
+
+
+\subsubsection{Access channels}
+Users are able to create, read, update and delete threads in accordance to their acquired status points. Users are responsible for their respective posts on each thread and this is the channel through which they will interact with the system. Other modules within  the system use the same class functions to get certain information about the threads. For example, the system will \emph{postPostToDatabase()} to carry information to the database.
+
+\subsubsection{Scope of Responsibilities}
+The module is responsible for providing an infrastucture that stores persistant domain data such as the posts within the threads. It is not responsible for the creation of an environment for process execution, however, it is responible for the guarantee that appropriate information is available for the module which is.
+
+\subsubsection{Quality requirements}
+The implementation of this module has a few flaws. This takes a toll on Testability and Reliability. However, the following quality requirements seem to be in place:
+\begin{itemize}
+\item Availability
+\item Maintainability
+\item Usability
+\end{itemize}
+Monitoribility and Auditability can also be achieved in this module but have the potential to be quite tedious since there are a lot of threads that will be created.
+
+\subsubsection{Archictectural constraints}
+This module succeeded in using the pre-specified technologies needed to implement the system. This is advantageous as it will make integrating the system as a whole a much simpler task without any tedious cross-compiling and coupling. The technologies used are:
+
+\subsubsection{Technologies}
+\begin{itemize}
+\item Node
+\item NPM
+\item Mongoose
+\item MongoDB
+\end{itemize}
 
 \end{flushleft}
