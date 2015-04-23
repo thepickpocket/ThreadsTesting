@@ -2,5 +2,46 @@
 \begin{flushleft}
 
 %CONTENT
+The Threads module has the role of managing the threads of a buzz space in the Buzz system. This module has been made to be non-blocking so that multiple calls for services to this module will result in independent responses. This module is apart of the core modules used in the Buzz system.
+
+The Threads module is implemented in Node(as in Node.js) in conjunction with the Node Package Manager(NPM). Node is by nature a non-blocking run-time environment using Java-Script. The installation of various packages from NPM allow for the different architectural requirements to be fulfilled. 
+
+\subsubsection{Scope of responsibility}
+The Threads module encompasses a persistence infrastructure and a reporting infrastructure. 
+
+The persistent infrastructure that is used by this module is MongoDB. MongoDB is an open-source document database. The MongoDB database is accessed by
+
+The reporting infrastructure is in the form functions or services that return/report the status of a request whether it be successful or not.
+
+\subsubsection{Quality requirements}
+The quality requirements addressed by this module are the following:
+\begin{itemize}
+\item Performance requirements
+\item Maintainability
+\item Testability
+\item Usability
+\end{itemize}
+The module is maintainable as the functional requirements for Threads are implemented with separation of concerns in mind. 
+The module is very testable and has unit tests performed on each of the exported functions. Because of the require function provided in node, it is easily usable.
+\b
+The ones that are not addressed are:
+\begin{itemize}
+\item Scalability
+\end{itemize}
+The system module is not very scalable mainly because of the database management system, MongoDB. MongoDB is a light-weight database system and would not be suitable on a large scale. Otherwise the module would not have scalability issues.
+
+\subsubsection{Integration and access channels}
+Those who have access to this module are those that make use of the Buzz system. For example, a registered user, registered to a Buzz space, will have CRUD operations available to them.
+
+\subsubsection{Architectural constraints}
+The architectural constraints on this module would be the use of the Node run-time environment. There is no restriction on the database or the node modules used.
+
+\subsubsection{Technologies}
+\begin{itemize}
+\item Node
+\item NPM
+\item Mongoose
+\item MongoDB
+\end{itemize}
 
 \end{flushleft}
