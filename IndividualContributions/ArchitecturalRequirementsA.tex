@@ -21,14 +21,14 @@ The quality requirements addressed by this module are the following:
 \item Testability
 \item Usability
 \end{itemize}
-The module is maintainable as the functional requirements for Threads are implemented with separation of concerns in mind. 
-The module is very testable and has unit tests performed on each of the exported functions. Because of the require function provided in node, it is easily usable.
+The module is maintainable as the functional requirements for Threads are implemented with separation of concerns in mind and the code is well documented internally and well structured. 
+The module is very testable and has unit tests performed on each of the exported functions. Because of the require function provided in node, it is easily usable, because the function prototypes correspond to the requirements specified in the specifications.
 \b
 The ones that are not addressed are:
 \begin{itemize}
 \item Scalability
 \end{itemize}
-The system module is not very scalable mainly because of the database management system, MongoDB. MongoDB is a light-weight database system and would not be suitable on a large scale. Otherwise the module would not have scalability issues.
+The system module is not very scalable mainly because of the database management system, MongoDB. MongoDB is a light-weight database system and would not be suitable on a large scale. Otherwise the module would not have scalability issues. The missing callback functions prevent the functions from being scalable, or even cause them to not work correctly at all, because of the asynchronous nature of Javascript and evidently node.js.
 
 \subsubsection{Integration and access channels}
 Those who have access to this module are those that make use of the Buzz system. For example, a registered user, registered to a Buzz space, will have CRUD operations available to them.
