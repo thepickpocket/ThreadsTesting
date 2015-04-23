@@ -37,64 +37,66 @@ The BuzzSpace software was tested on the nodejs test platform using the nodeunit
 \textbf{Rationale for decision:}
 After executing a test, the decision is defined according to the following rules:
 \begin{itemize}
-  \item OK: The test result is compliant to the expected result.
-  \item 	NOK: The test result differs from the expected result.
-   \item Partial OK: There is partially compliant to the expected result. 
-    \item NOT RUN: The default state of a test sheet cannot be executed.
-  \item NOT COMPLETED: The test sheet is set to "Not Completed" state when at least one step of the test is set "Not Run" state. \ldots
+  	\item OK: The test result is compliant to the expected result.
+  	\item 	NOK: The test result differs from the expected result.
+   	\item Partial OK: There is partially compliant to the expected result. 
+    	\item NOT RUN: The default state of a test sheet cannot be executed.
+  	\item NOT COMPLETED: The test sheet is set to "Not Completed" state when at least one step of the test is set "Not Run" state. \ldots
 \end{itemize}
 
 \textbf{Overall assessment of tests:}
 Overall assessment of tests:
 \begin{itemize}
-  \item All tests did not provide an interface.
-  \item 	All tests passed but with the use of different parameters were not supposed to pass.
-   \item The tests respond to all kinds of input but they respond incorrectly.
-    \item Tests achieve the desired input in the database. 
+	\item All tests did not provide an interface.
+	\item 	All tests passed but with the use of different parameters were not supposed to pass.
+	\item The tests respond to all kinds of input but they respond incorrectly.
+	\item Tests achieve the desired input in the database. 
  \end{itemize}
 
 \textbf{Techniques used to test:}
 \begin{enumerate}
-  \item All tests did not provide an interface.
-  \item Code average- a check to see if all statement executed only once
-   \item Fault injection – I placed invalid expectations of the result and an error was not thrown.
-    \item Software 
-     \item Excercising inputs and checking the output for a differ in behavior
+  	\item All tests did not provide an interface.
+  	\item Code average- a check to see if all statement executed only once
+   	\item Fault injection – I placed invalid expectations of the result and an error was not thrown.
+    	\item Software 
+    	\item Excercising inputs and checking the output for a differ in behavior
  \end{enumerate}
 
 \textbf{Statistics about tests:}
 \begin{itemize}
-  \item 	0 percent of tests OK
-  \item  0 percent of tests NOK
-   \item 100 percent of tests POK
-    \item 	0 percent of tests NR
-        \item 	0 percent of tests NC
+  	\item  0 percent of tests OK
+  	\item  0 percent of tests NOK
+   	\item 100 percent of tests POK
+    	\item 	0 percent of tests NR
+        	\item 	0 percent of tests NC
  \end{itemize}
 
 \textbf{Test cases:}
 \begin{itemize}
-  \item Test cases planned = 4 
-  \item  Test cases executed = 4
-   \item Test cases passed = 0
-    \item Test cases failed =4
+  	\item Test cases planned = 4 
+  	\item  Test cases executed = 4
+   	\item Test cases passed = 0
+    	\item Test cases failed = 4
  \end{itemize}
 
 \textbf{Give also statistics about bugs and enhancements:}
 \begin{itemize}
-  \item 	Total number = 4
-  \item  	Number of Critical =4
-   \item 	Number of Major =0
-    \item Number of minor =0
-      \item Number of enhancements =0
+  	\item 	Total number = 4
+  	\item  	Number of Critical = 4
+   	\item 	Number of Major = 0
+    	\item Number of minor = 0
+      	\item Number of enhancements = 0
  \end{itemize}
-
+ \end{flushleft}
+ 
+\begin{flushleft}
 \textbf{Conclusion:}
-The bugs specified were Mongoose related. (Error: Cast Error:Cast to ObjectId failed for value[object Object] at path_id)
-In HideThread we changed the parameter in test.equal to a different expected result and it still passed so we don’t think the function actually checks if the value field is hidden or not.
+The bugs specified were Mongoose related. (Error: Cast Error:Cast to ObjectId failed for value [object Object] at path\_id)\\
+In HideThread we changed the parameter in test.equal to a different expected result and it still passed so we don’t think the function actually checks if the value field is hidden or not.\\
 In MoveThread there are no error checks or bounds checks as we inserted an overbound value and it still passed the test.
-
-
 \end{flushleft}
+
+
 
 %CONTENT
 
